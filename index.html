@@ -1,9 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naty y Adri</title>
+    <title>Nati & Ari / Casamiento</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Menú desplegable -->
+        <nav class="navbar" id="navbar">
+          <div class="nav-links">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#ubicacion" class="nav-link">Ubicación</a>
+            <a href="#info" class="nav-link">Información útil</a>
+            <a href="#regalo" class="nav-link">Regalo</a>
+          </div>
+
+          <div class="mobile-menu-footer">
+            <img
+              src="img/decoracion-footer-menu.png"
+              alt="Decoración menú mobile"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-banner">
+      <div class="container hero-flex">
+        <!-- Columna izquierda: imagen -->
+        <div class="hero-img">
+          <img src="img/banner-hero-naty-y-ari.png" alt="Nati y Ari" />
+        </div>
+
+        <!-- Columna derecha: texto -->
+        <div class="hero-text">
+          <p class="hero-subtitle">
+            ¡Te esperamos para celebrar nuestro casamiento!
+          </p>
+          <h1 class="hero-title">Nati & Ari</h1>
+          <p class="hero-date">15.02.2026</p>
+          <p class="hero-info">
+            Sábado 15 de febrero, 2026 – 17:00hs<br />
+            <strong>Estancia Agua Verde,<br />La Barra, Uruguay.</strong>
+          </p>
+          <a href="#confirmar" class="btn">Confirmar asistencia</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar");
+
+      toggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        toggle.classList.toggle("active"); // <- agrega la clase para la cruz
+      });
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navbar.classList.remove("active");
+          toggle.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>
