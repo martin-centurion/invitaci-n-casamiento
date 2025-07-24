@@ -789,8 +789,38 @@ h3 {
     gap: 20px;
   }
 
+  .subtitulo-regalo {
+    padding: 0 0 40px;
+  }
+
+  .mensaje-final {
+    padding: 40px 0 0;
+  }
+
   .bloque-bancario {
     max-width: 90%;
+  }
+
+  .adorno.arriba {
+    top: -65px;
+    left: 50%;
+    width: 350px;
+  }
+
+  .adorno.abajo {
+    bottom: -65px;
+    left: 50%;
+    width: 350px;
+  }
+
+  .perro-izq {
+    left: 60px;
+    width: 250px;
+  }
+
+  .perro-der {
+    right: -20px;
+    width: 250px;
   }
 
   .perro {
