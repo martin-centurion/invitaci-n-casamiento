@@ -966,6 +966,10 @@ h3 {
     gap: 40px;
   }
 
+  .hero-img img {
+    max-width: 350px;
+  }
+
   .hero-title {
     font-size: 36px;
   }
