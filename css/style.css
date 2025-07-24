@@ -4,7 +4,8 @@
   --color-violeta: #8e3a61;
   --color-negro: #000000;
   --color-blanco: #ffffff;
-  --color-fondo: #f4f1ea;
+  --color-fondo: #f4f1edba;
+  --color-fondo-nav: #f4f1ed;
 
   --color-texto-principal: var(--color-negro);
   --color-texto-suave: #555;
@@ -41,7 +42,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--color-fondo);
   z-index: -1;
 }
 
@@ -91,13 +92,12 @@ h3 {
 
 /* Imagen */
 .hero-img img {
-  max-width: 100%;
-  width: 300px;
-  height: auto;
+  max-width: 500px;
+  text-align: center;
 }
 
 /* Texto */
-.hero-text {
+/* .hero-text {
   max-width: 500px;
   text-align: center;
 }
@@ -129,7 +129,7 @@ h3 {
   font-size: 16px;
   margin-bottom: 30px;
   line-height: 1.6;
-}
+} */
 
 /* Botón */
 .btn {
@@ -149,9 +149,7 @@ h3 {
 
 /* CONTENEDOR GENERAL DEL HEADER */
 .site-header {
-  background-color: transparent;
   padding: 20px 0;
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -244,6 +242,657 @@ h3 {
 
 .menu-toggle.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== COMIENZO SECCIÓN UBICACIÓN ===== */
+
+.seccion-ubicacion {
+  max-width: 1200px;
+  padding: 80px 20px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.ubicacion-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.ubicacion-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ubicacion-texto .seccion-titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 25px;
+  color: var(--color-verde);
+}
+
+.ubicacion-texto p {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+  margin: 50px 0;
+}
+
+.link-como-llegar {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--color-negro);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.link-como-llegar .flecha {
+  margin-left: 6px;
+  font-size: 20px;
+}
+
+.link-como-llegar:hover {
+  color: var(--color-verde);
+}
+
+.ubicacion-mapa {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.ubicacion-mapa img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== FIN SECCIÓN UBICACIÓN ===== */
+
+/* Sección Dress Code */
+.seccion-dress-code {
+  padding: 80px 20px;
+  background-color: transparent;
+}
+
+.dress-code-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img-left,
+.img-right {
+  flex: 1;
+  text-align: center;
+}
+
+.img-left img,
+.img-right img {
+  max-width: 120px;
+  height: auto;
+}
+
+.dress-code-content {
+  flex: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.dress-code-content .guarda {
+  max-width: 452px;
+  margin-bottom: 20px;
+}
+
+.seccion-titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  color: var(--color-verde);
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-violeta);
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+}
+
+/* SECCION DRESS MEN */
+
+.seccion-dress-men {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.dress-men-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.dress-men-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.dress-men-img {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.dress-men-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.seccion-titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  color: var(--color-verde);
+  margin-bottom: 16px;
+}
+
+.descripcion strong {
+  font-weight: 700;
+}
+
+.referencia-titulo {
+  margin-top: 30px;
+  font-family: "Barlow", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--color-violeta);
+}
+
+.paleta-colores {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.paleta-colores span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* SECCION HOTELES */
+
+.seccion-hoteles {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.guarda-hoteles {
+  max-width: 452px;
+  margin-bottom: 10px;
+}
+
+.seccion-titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  color: var(--color-verde);
+}
+
+.subtitulo-hoteles {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+  margin-bottom: 50px;
+}
+
+.hoteles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.hotel-card {
+  position: relative; /* Necesario para que las uvas se posicionen dentro */
+  background: transparent;
+  text-align: left;
+  max-width: 300px;
+  padding-bottom: 60px; /* espacio para que no tape texto */
+}
+
+.hotel-card h3 {
+  color: var(--color-violeta);
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.hotel-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.hotel-card li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hotel-card i {
+  min-width: 18px;
+  color: var(--color-negro);
+}
+
+/* Uvas decorativas */
+.decoracion-uva {
+  position: absolute;
+  bottom: 0;
+  width: 240px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.decoracion-uva.izquierda {
+  left: -340px;
+}
+
+.decoracion-uva.derecha {
+  top: -140px;
+  right: -340px;
+}
+
+/* SECCION TRANSPORTES */
+
+.seccion-transportes {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.guarda-transporte {
+  max-width: 452px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.guarda-transporte.inferior {
+  margin-top: 40px;
+}
+
+.seccion-titulo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  color: var(--color-verde);
+}
+
+.subtitulo-transporte {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+  margin-bottom: 50px;
+}
+
+.transporte-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto {
+  min-width: 150px;
+  text-align: center;
+}
+
+.contacto h3 {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-violeta);
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-negro);
+}
+
+.contacto i {
+  margin-right: 6px;
+}
+
+.uber-link a {
+  color: var(--color-negro);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.uber-link a:hover {
+  color: var(--color-verde);
+}
+
+/* SECCION PROFESIONALES */
+
+.seccion-peinado {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.subtitulo-peinado {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+  margin-bottom: 50px;
+}
+
+.peinado-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.peluquero h3 {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-violeta);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.peluquero p {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-negro);
+}
+
+.peluquero i {
+  margin-right: 6px;
+}
+
+.guarda-inferior {
+  max-width: 425px;
+  margin: 50px auto 0;
+  display: block;
+}
+
+/* SECCION MAKE UP*/
+
+.seccion-makeup {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.subtitulo-makeup {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+  margin-bottom: 50px;
+}
+
+.makeup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.maquilladora h3 {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-violeta);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.maquilladora p {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-negro);
+}
+
+.maquilladora i {
+  margin-right: 6px;
+}
+
+.guarda-inferior {
+  max-width: 425px;
+  margin: 50px auto 0;
+  display: block;
+}
+
+/* SECCION REGALOS */
+
+.seccion-regalo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.subtitulo-regalo {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 5%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: var(--color-negro);
+  margin-bottom: 50px;
+}
+
+.contenido-regalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.bloque-bancario {
+  position: relative;
+  border: 2px solid transparent;
+  padding: 30px 20px;
+  max-width: 300px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.titulo-bancario {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-violeta);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.adorno.arriba {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+}
+
+.adorno.abajo {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+}
+
+.perro {
+  max-width: 170px;
+  height: auto;
+}
+
+.perro-izq {
+  position: absolute;
+  left: 400px;
+  transform: translateX(-50%);
+  width: 500px;
+}
+
+.perro-der {
+  position: absolute;
+  right: 180px;
+  transform: translateX(-50%);
+  width: 500px;
+}
+
+.mensaje-final {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 17px;
+  margin: 60px auto 20px;
+  line-height: 1.6;
+}
+
+.decoracion-copas {
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenido-regalo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloque-bancario {
+    max-width: 90%;
+  }
+
+  .perro {
+    max-width: 100px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .transporte-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hoteles-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .decoracion-uva {
+    position: static;
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+/* DRESS MEN MOBILE */
+
+@media (max-width: 768px) {
+  .dress-men-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dress-men-texto {
+    order: 1;
+    padding: 0 10px;
+  }
+
+  .dress-men-img {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  .seccion-titulo {
+    font-size: 28px;
+  }
+
+  .descripcion {
+    font-size: 15px;
+  }
+
+  .referencia-titulo {
+    font-size: 13px;
+  }
+
+  .paleta-colores {
+    justify-content: center;
+  }
+
+  .paleta-colores span {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 768px) {
