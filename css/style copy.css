@@ -78,7 +78,7 @@ h3 {
 .hero-banner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 60px 20px;
   background-color: transparent; /* ya tiene fondo global */
 }
 
@@ -109,7 +109,7 @@ h3 {
 }
 
 .btn:hover {
-  background-color: var(--color-btn-hover);
+  background-color: var(--color-verde);
 }
 
 /* CONTENEDOR GENERAL DEL HEADER */
@@ -213,7 +213,7 @@ h3 {
 
 .seccion-ubicacion {
   max-width: 1200px;
-  padding: 80px 20px 40px;
+  padding: 80px 20px;
   margin: 0 auto;
   background-color: transparent;
 }
@@ -286,8 +286,6 @@ h3 {
 
 /* Sección Dress Code */
 .seccion-dress-code {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 80px 20px;
   background-color: transparent;
 }
@@ -321,7 +319,7 @@ h3 {
 
 .dress-code-content .guarda {
   max-width: 452px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .seccion-titulo {
@@ -353,7 +351,7 @@ h3 {
 .seccion-dress-men {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 80px 20px;
 }
 
 .dress-men-grid {
@@ -420,7 +418,7 @@ h3 {
 .seccion-hoteles {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -510,7 +508,7 @@ h3 {
 /* SECCION TRANSPORTES */
 
 .seccion-transportes {
-  padding: 20px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -642,7 +640,7 @@ h3 {
 .seccion-makeup {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -694,7 +692,7 @@ h3 {
 .seccion-regalo {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -830,15 +828,12 @@ h3 {
     text-align: center;
   }
 
-  .dress-code-content .guarda {
-    max-width: 300px;
-    margin: 0 auto 20px;
-  }
+  .guarda,
   .guarda-hoteles,
   .guarda-inferior,
   .guarda-transporte,
   .guarda-transporte.inferior {
-    max-width: 300px;
+    max-width: 252px;
   }
 
   .dress-men-texto {
@@ -852,7 +847,7 @@ h3 {
   }
 
   .seccion-titulo {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .descripcion {
@@ -879,11 +874,12 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     background-color: var(--color-blanco);
     z-index: 999;
     padding: 40px 20px;
     text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -937,7 +933,7 @@ h3 {
 /* Responsive */
 @media (max-width: 768px) {
   .hero-flex {
-    max-width: 100%;
+    max-width: 320px;
     flex-direction: column;
     text-align: center;
     gap: 40px;
