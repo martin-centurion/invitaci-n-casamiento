@@ -909,7 +909,7 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     background-color: var(--color-blanco);
     z-index: 999;
     padding: 40px 20px;
