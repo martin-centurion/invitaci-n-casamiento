@@ -14,10 +14,6 @@
   --color-btn-hover: #732f50;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 a {
   color: var(--color-negro);
 }
@@ -126,6 +122,8 @@ h3 {
 
 /* CONTENEDOR GENERAL DEL HEADER */
 .site-header {
+  position: sticky;
+  background-color: var(--color-fondo);
   padding: 20px 0;
   top: 0;
   z-index: 1000;
