@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-violeta);
+  color: var(--color-fondo-nav);
 }
 
 /* ===== RESET ===== */
@@ -281,7 +281,7 @@ h3 {
 
 .ubicacion-mapa {
   flex: 1;
-  min-width: 280px;
+  min-width: 700px;
   text-align: center;
 }
 
@@ -363,7 +363,7 @@ h3 {
 .seccion-dress-men {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 40px 20px;
 }
 
 .dress-men-grid {
@@ -402,7 +402,7 @@ h3 {
 }
 
 .referencia-titulo {
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: "Barlow", sans-serif;
   font-style: italic;
   font-weight: 600;
@@ -411,7 +411,7 @@ h3 {
 }
 
 .paleta-colores {
-  max-width: 400px;
+  max-width: 550px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -420,8 +420,8 @@ h3 {
 
 .paleta-colores span {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
 }
 
