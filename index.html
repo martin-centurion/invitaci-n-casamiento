@@ -51,19 +51,40 @@
 
     <section id="inicio" class="hero-banner">
       <div class="container hero-flex">
-        <!-- Columna izquierda: imagen -->
+        <!-- Columna izquierda: imágenes -->
         <div class="hero-img">
-          <img src="img/banner-hero-naty-y-ari.png" alt="Nati y Ari" />
-          <img src="img/banner-fecha.png" alt="Nati y Ari" />
+          <!-- Imagen 1 -->
+          <picture>
+            <!-- Versión para mobile -->
+            <source
+              srcset="img/banner-mobile-1.png"
+              media="(max-width: 768px)"
+            />
+            <!-- Versión para desktop -->
+            <img src="img/banner-hero-naty-y-ari.png" alt="Nati y Ari" />
+          </picture>
+
+          <!-- Imagen 2 -->
+          <picture>
+            <!-- Versión para mobile -->
+            <source
+              srcset="img/banner-mobile-2.png"
+              media="(max-width: 768px)"
+            />
+            <!-- Versión para desktop -->
+            <img src="img/banner-fecha.png" alt="Fecha" />
+          </picture>
         </div>
-        <!-- Columna derecha: texto -->
+
+        <!-- Columna derecha: botón -->
         <div class="hero-img">
           <a
             href="https://forms.gle/pt95XtDBZWz8tp7j9"
             target="_blank"
             class="btn"
-            >Confirmar asistencia</a
           >
+            Confirmar asistencia
+          </a>
         </div>
       </div>
     </section>
