@@ -1029,6 +1029,11 @@ h3 {
     margin-top: 30px;
   }
 
+  .ubicacion-texto .seccion-titulo {
+    text-align: center;
+    font-size: 40px;
+  }
+
   .seccion-titulo {
     font-size: 40px;
   }
