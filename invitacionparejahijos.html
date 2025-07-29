@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nati & Ari / Casamiento</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Menú desplegable -->
+        <nav class="navbar" id="navbar">
+          <div class="nav-links">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#ubicacion" class="nav-link">Ubicación</a>
+            <a href="#info" class="nav-link">Información útil</a>
+            <a href="#regalo" class="nav-link">Regalo</a>
+          </div>
+
+          <div class="mobile-menu-footer">
+            <img
+              src="img/decoracion-footer-menu.png"
+              alt="Decoración menú mobile"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="inicio" class="hero-banner">
+      <div class="container hero-flex">
+        <!-- Columna izquierda: imágenes -->
+        <div class="hero-img">
+          <!-- Imagen 1 -->
+          <picture>
+            <!-- Versión para mobile -->
+            <source
+              srcset="img/banner-mobile-1.png"
+              media="(max-width: 768px)"
+            />
+            <!-- Versión para desktop -->
+            <img src="img/banner-hero-naty-y-ari.png" alt="Nati y Ari" />
+          </picture>
+
+          <!-- Imagen 2 -->
+          <picture>
+            <!-- Versión para mobile -->
+            <source
+              srcset="img/banner-mobile-2.png"
+              media="(max-width: 768px)"
+            />
+            <!-- Versión para desktop -->
+            <img src="img/banner-fecha.png" alt="Fecha" />
+          </picture>
+        </div>
+
+        <!-- Columna derecha: botón -->
+        <div class="hero-img">
+          <a
+            href="https://forms.gle/PkhjUDj6V87poMxA9"
+            target="_blank"
+            class="btn"
+          >
+            Confirmar asistencia
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="seccion-ubicacion">
+      <div class="container ubicacion-grid">
+        <!-- Columna de texto -->
+        <div class="ubicacion-texto">
+          <h2 class="seccion-titulo">Ubicación</h2>
+
+          <p>
+            Son 25 min en auto desde la Punta. La ceremonia y fiesta se realizan
+            en el mismo lugar. Contamos con estacionamiento privado y gratuito.
+          </p>
+        </div>
+
+        <!-- Columna del mapa -->
+        <div class="ubicacion-mapa">
+          <img src="img/mapa-estancia.jpg" alt="Mapa Estancia Agua Verde" />
+        </div>
+        <a
+          href="https://maps.app.goo.gl/zrhamDGLJgfuFfXR9"
+          target="_blank"
+          class="btn-como-llegar"
+        >
+          ¿Cómo llegar? <span class="flecha">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="info" class="seccion-dress-code">
+      <div class="container dress-code-grid">
+        <!-- Antifaz lateral para desktop -->
+        <div class="img-left">
+          <img src="img/antifaz.png" alt="Antifaz" />
+        </div>
+
+        <!-- Contenido central -->
+        <div class="dress-code-content">
+          <!-- Guarda -->
+          <img src="img/guarda-verde.png" alt="Decoración" class="guarda" />
+
+          <!-- Antifaz que aparece solo en mobile -->
+          <div class="antifaz-mobile">
+            <img src="img/antifaz.png" alt="Antifaz" />
+          </div>
+
+          <!-- Título y texto -->
+          <h2 class="seccion-titulo">Dress Code</h2>
+          <p class="subtitulo">
+            Elegante Viñedo, estilo “Italian Toscana Summer”
+          </p>
+          <p class="descripcion">
+            El evento comenzará al atardecer y será mayormente al aire libre,
+            aunque también hay sectores cubiertos. El dress code es elegante
+            pero les recomendamos venir con zapatos aptos para caminar sobre el
+            pasto.<br />¡No se suspende por lluvia, tenemos plan B!
+          </p>
+        </div>
+
+        <!-- Imagen derecha -->
+        <div class="img-right">
+          <img src="img/saxo.png" alt="Saxo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-dress-men">
+      <div class="container dress-men-grid">
+        <!-- Columna izquierda: texto -->
+        <div class="dress-men-texto">
+          <img src="img/guarda-verde-men.png" alt="Decoración" class="guarda" />
+          <h2 class="seccion-titulo">Men</h2>
+          <p class="descripcion">
+            Trajes de lino o algodón en colores claros o tonos tierra. Camisas
+            con o sin corbata o con accesorios discretos. No utilizar traje
+            blanco. Traer anteojos y abrigo por si refresca.
+          </p>
+
+          <p class="referencia-titulo">Colores y tonos de referencia</p>
+          <div class="paleta-colores">
+            <!-- Repetí estos círculos con los colores necesarios -->
+            <span style="background-color: #000"></span>
+            <span style="background-color: #737373"></span>
+            <span style="background-color: #b4b4b4"></span>
+            <span style="background-color: #dedcd9"></span>
+            <span style="background-color: #13046e"></span>
+            <span style="background-color: #4b3f91"></span>
+            <span style="background-color: #96a9ff"></span>
+            <span style="background-color: #bfcaf9"></span>
+            <span style="background-color: #314822"></span>
+            <span style="background-color: #4b772e"></span>
+            <span style="background-color: #a5aa40"></span>
+            <span style="background-color: #ece15f"></span>
+            <span style="background-color: #5d432c"></span>
+            <span style="background-color: #aa8370"></span>
+            <span style="background-color: #b09a81"></span>
+            <span style="background-color: #d7c2a0"></span>
+          </div>
+        </div>
+
+        <!-- Columna derecha: imagen -->
+        <div class="dress-men-img">
+          <img
+            src="img/dress-men-modelos.jpg"
+            alt="Inspiración vestimenta hombres"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-dress-men">
+      <div class="container dress-men-grid">
+        <!-- Columna izquierda: texto -->
+        <div class="dress-men-texto">
+          <img
+            src="img/guarda-verde-women.png"
+            alt="Decoración"
+            class="guarda"
+          />
+          <h2 class="seccion-titulo">Women</h2>
+          <p class="descripcion">
+            Vestidos largos o midi, colores tierra, suaves. Si no tenes estos
+            colores, podés usar negro. Evitar estrictamente el color blanco,
+            nude o tonos similares. Traer anteojos y abrigo por si refresca.
+          </p>
+
+          <p class="referencia-titulo">Colores y tonos de referencia</p>
+          <div class="paleta-colores">
+            <!-- Repetí estos círculos con los colores necesarios -->
+            <span style="background-color: #751c47"></span>
+            <span style="background-color: #8e3a61"></span>
+            <span style="background-color: #ecb5ce"></span>
+            <span style="background-color: #f7d2e3"></span>
+            <span style="background-color: #314822"></span>
+            <span style="background-color: #4b772e"></span>
+            <span style="background-color: #a5aa40"></span>
+            <span style="background-color: #ece15f"></span>
+            <span style="background-color: #5d432c"></span>
+            <span style="background-color: #b96e57"></span>
+            <span style="background-color: #aa864e"></span>
+            <span style="background-color: #d0aa6d"></span>
+            <span style="background-color: #970000"></span>
+            <span style="background-color: #ff5757"></span>
+            <span style="background-color: #f78d8d"></span>
+            <span style="background-color: #ffbdbd"></span>
+          </div>
+        </div>
+
+        <!-- Columna derecha: imagen -->
+        <div class="dress-men-img">
+          <img
+            src="img/dress-women-modelos.jpg"
+            alt="Inspiración vestimenta hombres"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="hoteles" class="seccion-hoteles">
+      <div class="container">
+        <!-- Guarda -->
+        <img
+          src="img/guarda-verde.png"
+          alt="Guarda decorativa"
+          class="guarda-hoteles"
+        />
+
+        <!-- Uva superior solo para mobile (ahora entre guarda y título) -->
+        <img
+          src="img/uvas-amarillas.png"
+          alt="Decoración uva"
+          class="uva-mobile uva-top"
+        />
+
+        <!-- Título -->
+        <h2 class="seccion-titulo">Hoteles</h2>
+        <p class="subtitulo-hoteles">
+          Hospedajes cerca de Estancia Agua Verde para disfrutar cómodamente
+          antes y después de la fiesta.
+        </p>
+
+        <!-- Hoteles principales -->
+        <div class="hoteles-grid">
+          <div class="hotel-card">
+            <h3>Barrio Privado El Quijote</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-house"></i> Casas privadas para grupos
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/u2w9MNtPpMfayicF9"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Cam. del Cerro
+                  Eguzquiza km 10, La Barra (A 2,5 km de Estancia Agua Verde)
+                </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i> Verónica: +598 98 308 334
+              </li>
+            </ul>
+          </div>
+
+          <div class="hotel-card">
+            <h3>Casa Quetzal</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-hotel"></i> Boutique Hotel & Glamping
+                Exclusivo
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/eLzErXP87vKFJMY48"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Eguzquiza Km 11 (A
+                  1,5 km)
+                </a>
+              </li>
+              <li><i class="fa-solid fa-phone"></i> Juan: +54 911 4986 3799</li>
+              <li>
+                <a
+                  href="https://www.instagram.com/casaquetzaluy/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i> @casaquetzaluy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hotel-card">
+            <h3>Hotel Nobile Montoya</h3>
+            <ul>
+              <li><i class="fa-solid fa-hotel"></i> Nobile Hoteis</li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/M5hTSEKSAU4HrpNo8"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Eduardo Victor Haedo,
+                  315 La Barra
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/nobilehotelmontoya/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i> @nobilehotelmontoya
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.nobilehoteis.com.br/america-latina/uruguai/punta-del-este/nobile-hotel-montoya/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-globe"></i> Visitar Sitio web
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hoteles secundarios -->
+        <div class="hoteles-grid secundarios">
+          <div class="hotel-card">
+            <h3>Be House Hotel</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/behouse_suites/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i> @behouse_suites
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/ymcvbx1nFV8NxRip9"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Av. Pedragosa Sierra,
+                  Punta del Este
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behouse.uy/" target="_blank">
+                  <i class="fa-solid fa-globe"></i> Visitar Sitio Web
+                </a>
+              </li>
+            </ul>
+            <img
+              src="img/uvas-amarillas.png"
+              alt="Uvas decorativas"
+              class="decoracion-uva izquierda"
+            />
+          </div>
+
+          <div class="hotel-card">
+            <h3>Fasano Hotel</h3>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/laspiedras/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i> @laspiedras
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/aEFT1ozcZgMrajDGA"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-location-dot"></i> Eguzquiza y Paso del
+                  Barranco, Maldonado
+                </a>
+              </li>
+              <li>
+                <a href="https://reservations.fasano.com.br/" target="_blank">
+                  <i class="fa-solid fa-globe"></i> Visitar Sitio web
+                </a>
+              </li>
+            </ul>
+            <img
+              src="img/uvas-rojas.png"
+              alt="Uvas decorativas"
+              class="decoracion-uva derecha"
+            />
+          </div>
+        </div>
+
+        <!-- Uva abajo solo para mobile -->
+        <img
+          src="img/uvas-rojas.png"
+          alt="Decoración uva"
+          class="uva-mobile uva-bottom"
+        />
+      </div>
+    </section>
+
+    <section id="transportes" class="seccion-transportes">
+      <div class="container">
+        <!-- Guarda decorativa superior -->
+        <img
+          src="img/guarda-verde.png"
+          alt="Decoración"
+          class="guarda-transporte"
+        />
+
+        <!-- Título -->
+        <h2 class="seccion-titulo">Transportes</h2>
+        <p class="subtitulo-transporte">
+          Contactos de remises, combis y alternativas para llegar fácilmente al
+          lugar.
+        </p>
+
+        <!-- Grid de contactos -->
+        <div class="transporte-grid">
+          <div class="contacto">
+            <h3>Nicolas</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 99 575 603</p>
+          </div>
+
+          <div class="contacto">
+            <h3>Miguel</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 99 979 446</p>
+          </div>
+
+          <div class="contacto">
+            <h3>Cristian</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 95 532 493</p>
+          </div>
+
+          <div class="contacto">
+            <h3>Eduardo</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 99 115 538</p>
+          </div>
+
+          <div class="contacto">
+            <h3>Uber</h3>
+            <p class="uber-link">
+              <a href="https://m.uber.com/ul/" target="_blank" target="_blank"
+                >IR A APP →</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Guarda decorativa inferior -->
+        <img
+          src="img/guarda-verde.png"
+          alt="Decoración inferior"
+          class="guarda-transporte inferior"
+        />
+      </div>
+    </section>
+
+    <section id="peinado" class="seccion-peinado">
+      <div class="container">
+        <h2 class="seccion-titulo">Peinado</h2>
+        <p class="subtitulo-peinado">
+          Peluqueros recomendados para quienes quieran prepararse cerca del
+          lugar del evento.
+        </p>
+
+        <div class="peinado-grid">
+          <!-- Contacto -->
+          <div class="peluquero">
+            <h3>Vale Vicuña</h3>
+            <p><i class="fa-solid fa-phone"></i> (+598) 99 750 827</p>
+            <p>
+              <a
+                href="https://www.instagram.com/valevicunahairdesign/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @valevicunahairdesign</a
+              >
+            </p>
+          </div>
+
+          <div class="peluquero">
+            <h3>Flor Canedo</h3>
+            <p><i class="fa-solid fa-phone"></i> (+598) 93 775 659</p>
+            <p>
+              <a href="https://www.instagram.com/flocanedo/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @flocanedo</a
+              >
+            </p>
+          </div>
+
+          <div class="peluquero">
+            <h3>Pamela Cambre Ramos</h3>
+            <p><i class="fa-solid fa-phone"></i> (+598) 95 065 000</p>
+            <p>
+              <a
+                href="https://www.instagram.com/pamecambremakeup/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @pamecambremakeup</a
+              >
+            </p>
+          </div>
+
+          <div class="peluquero">
+            <h3>Jorge Cruz</h3>
+            <p><i class="fa-solid fa-phone"></i> (+598) 94 626 707</p>
+            <p>
+              <a href="https://www.instagram.com/jo_cruzmod/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @jo_cruzmod</a
+              >
+            </p>
+          </div>
+
+          <div class="peluquero">
+            <h3>Mario y Angie</h3>
+            <p><i class="fa-solid fa-phone"></i> (+598) 93 775 659</p>
+            <p>
+              <a
+                href="https://www.instagram.com/peluqueriamarioyangie/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i>
+                @peluqueriamarioyangie</a
+              >
+            </p>
+          </div>
+
+          <div class="peluquero">
+            <h3>Machado Hair Dimension</h3>
+            <p><i class="fa-solid fa-phone"></i> (+598) 95 065 000</p>
+            <p>
+              <a
+                href="https://www.instagram.com/machadoshairdimension/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i>
+                @machadoshairdimension</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Guarda decorativa inferior -->
+        <img
+          src="img/guarda-verde.png"
+          alt="Decoración inferior"
+          class="guarda-inferior"
+        />
+      </div>
+    </section>
+
+    <section id="makeup" class="seccion-makeup">
+      <div class="container">
+        <h2 class="seccion-titulo">Make Up</h2>
+        <p class="subtitulo-makeup">
+          Maquilladoras que podés contactar si querés agendar un turno para
+          verte radiante ese día.
+        </p>
+
+        <div class="makeup-grid">
+          <!-- Contacto 1 -->
+          <div class="maquilladora">
+            <h3>Lucia Peradejordi</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 99 324 972</p>
+            <p>
+              <a
+                href="https://www.instagram.com/luperadejordi_makeup/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @luperadejordi_makeup</a
+              >
+            </p>
+          </div>
+
+          <!-- Contacto 2 -->
+          <div class="maquilladora">
+            <h3>Luchi Pereira</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 9932 4972</p>
+            <p>
+              <a href="https://www.instagram.com/luchi_makeup/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @luchi_makeup</a
+              >
+            </p>
+          </div>
+
+          <!-- Contacto 3 -->
+          <div class="maquilladora">
+            <h3>Emily Mc Cubbin</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 9957 7325</p>
+            <p>
+              <a href="https://www.instagram.com/e.m.makeup/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i> @e.m.makeup</a
+              >
+            </p>
+          </div>
+
+          <!-- Contacto 4 -->
+          <div class="maquilladora">
+            <h3>Marti Cruz</h3>
+            <p><i class="fa-solid fa-phone"></i> +598 9942 5566</p>
+            <p>
+              <a
+                href="https://www.instagram.com/marticruzmakeup.studio/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i>
+                @marticruzmakeup.studio</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Guarda decorativa inferior -->
+        <img
+          src="img/lianas-con-uvas.png"
+          alt="Decoración"
+          class="guarda-inferior"
+        />
+      </div>
+    </section>
+
+    <section id="regalo" class="seccion-regalo">
+      <div class="container">
+        <h2 class="seccion-titulo">Regalo</h2>
+        <p class="subtitulo-regalo">
+          Que estén presentes es el mejor regalo que nos pueden dar! Pero si, de
+          todas maneras quieren hacernos uno, pueden ayudarnos con nuestra Luna
+          de Miel. Les dejamos nuestros datos:
+        </p>
+
+        <div class="contenido-regalo">
+          <img
+            src="img/perro-blanco.png"
+            alt="Perro blanco"
+            class="perro perro-izq"
+          />
+
+          <div class="bloque-bancario">
+            <img src="img/adornos-arriba.png" class="adorno arriba" alt="" />
+            <h3 class="titulo-bancario">Datos Bancarios</h3>
+            <p>
+              <strong>Titular de la cuenta:</strong><br />
+              Eskenazi Ariel Roberto
+            </p>
+            <p>
+              <strong>Número de CBU:</strong><br />
+              0720208988000000981640
+            </p>
+            <p>
+              <strong>Alias:</strong><br />
+              NATY.FREDDY.BRUNA
+            </p>
+            <img src="img/adornos-abajo.png" class="adorno abajo" alt="" />
+          </div>
+
+          <img
+            src="img/perro-negro.png"
+            alt="Perro marrón"
+            class="perro perro-der"
+          />
+        </div>
+
+        <p class="mensaje-final">
+          ¡Te esperamos para brindar, celebrar y crear recuerdos inolvidables
+          juntos en nuestro gran día!
+        </p>
+
+        <img
+          src="img/copa-vino-uvas.png"
+          alt="Decoración copas"
+          class="decoracion-copas"
+        />
+      </div>
+    </section>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar");
+
+      toggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        toggle.classList.toggle("active"); // <- agrega la clase para la cruz
+      });
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navbar.classList.remove("active");
+          toggle.classList.remove("active");
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 100, // ajusta si tu header es sticky
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
