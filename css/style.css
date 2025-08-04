@@ -492,7 +492,7 @@ h3 {
 /* SECCION HOTELES */
 
 .seccion-hoteles {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px 20px;
   text-align: center;
@@ -531,7 +531,7 @@ h3 {
   position: relative;
   background: transparent;
   text-align: left;
-  max-width: 300px;
+  max-width: 20%;
   padding-bottom: 60px;
 }
 
@@ -582,12 +582,13 @@ h3 {
 }
 
 .decoracion-uva.izquierda {
-  left: -340px;
+  left: -140px;
+  top: 140px;
 }
 
 .decoracion-uva.derecha {
-  top: -140px;
-  right: -340px;
+  top: 130px;
+  right: -20px;
 }
 
 /* ✅ Uvas móviles arriba y abajo */
