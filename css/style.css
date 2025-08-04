@@ -582,13 +582,15 @@ h3 {
 }
 
 .decoracion-uva.izquierda {
+  max-width: 170px;
   left: -140px;
-  top: 140px;
+  top: 180px;
 }
 
 .decoracion-uva.derecha {
-  top: 130px;
-  right: -20px;
+  max-width: 200px;
+  top: 180px;
+  right: 320px;
 }
 
 /* ✅ Uvas móviles arriba y abajo */
